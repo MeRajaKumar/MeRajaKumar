@@ -27,7 +27,7 @@ nav{
     padding-top: 20px;
     padding-right: 4%;
     padding-left: 4%;
-    padding-bottom: % ;
+    /* padding-bottom:  ; */
 }
 .logo{
     font-size: 30px;
@@ -41,7 +41,7 @@ nav ul {
 nav ul li{
     list-style-type: none;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 15px;
 }
 nav ul li a{
     color: white;
@@ -76,10 +76,11 @@ nav button a{
 .container{
     height: 100vh;
     width: 100%;
-    padding-left: 100px;
-    padding-top: 70px;
+    
 }
 .home{
+    padding-left: 100px;
+    padding-top: 70px;
     height: 90vh;
     display: flex;
     justify-content: space-evenly;
