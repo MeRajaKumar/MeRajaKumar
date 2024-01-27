@@ -1,5 +1,4 @@
 ### Hi there 👋
-Here's Link of my portfolio https://merajakumar.github.io/MeRajaKumar/
 
 <!--
 **MeRajaKumar/MeRajaKumar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

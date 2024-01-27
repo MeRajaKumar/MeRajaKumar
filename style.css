@@ -16,8 +16,8 @@
 .header{
     height: 10vh;
     width: 100%;
-    /* background-color: var(--background-color); */
-    background-color: #06064E;
+    background-color: var(--background-color);
+    /* background-color: #06064E; */
     /* padding-bottom: 15px; */
 }
 nav{
