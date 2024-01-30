@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300&family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&family=Open+Sans&display=swap');
 :root{
      --text-clr:#fff;
      --bcg-clr:#1A120B;
@@ -10,8 +10,8 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     font-family: 'Fira Sans', sans-serif;
-     font-family: 'Open Sans', sans-serif;
+     font-family: 'Josefin Sans', sans-serif;
+     /* font-family: 'Open Sans', sans-serif; */
 }
 .home{
      height: 100vh;
@@ -65,8 +65,10 @@
      &:hover{
           cursor: pointer;
           background-color: #D5CEA3;
+          /* transform: scale(1.1); */
           color: #1A120B;
-          transition: .4s;
+
+          /* transition: .4s; */
 
      } 
  }
@@ -75,7 +77,13 @@
      color: #fff;
      font-size: 1.1rem;
      font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+     letter-spacing: 0.5px;
+     &:hover{
+        color: #1A120B;
+        transition: .4s;
 
+     }
  }
  .gitBtn i{
      padding-right: 3px;
@@ -84,33 +92,44 @@
  }
  .heroSection{
      /* background-color: #3C2A21; */
-     height: 60vh;
-     width: 750px;
+     height: 100vh auto;
+     width: 100% auto;
      margin-top:200px ;
      display: flex;
      justify-content: center;
      flex-direction: column;
      align-items: center;
  }
+ .heroSection .heroSectionDiv{
+     display: flex;
+     height: auto;
+     width: auto;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     gap: 20px;
+ }
  .heroSection p{
      color: #fff;
-     font-size: 70px;
+     font-size: 80px;
      opacity: 80%;
  }
  .heroSection h1{
-     font-size: 55px;
+     font-size: 65px;
      color: #fff;
  }
  .heroSectionBtn{
      margin-top: 20px;
-     
-     padding-right: 10px;
+     gap: 20px;
+     display: flex;
 
  }
 .heroSectionBtn button{
-     
+    font-family: 'Open Sans', sans-serif;
      padding: 7px 18px;
      background: transparent;
+     font-weight: bold;
+     letter-spacing: 0.5px;
      border-radius: 30px;
      border: 1px solid #D5CEA3;
      font-size: 1.1rem;

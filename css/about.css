@@ -1,0 +1,25 @@
+.about{
+     height: 80vh;
+     width: 100%;
+     background-color: #1A120B;
+     display: flex;
+     justify-content: center;
+     gap: 5px;
+
+}
+.about .aboutDiv{
+     height: 100%;
+     width: 100%;
+     /* background-color: #3C2A21; */
+}
+.first{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+}
+.first h1{
+     color: #3C2A21;
+     font-size: 45px;
+     font-weight: bold;
+}
