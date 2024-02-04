@@ -1,11 +1,10 @@
 .about{
-     height: 80vh;
+     height: 90vh;
      width: 100%;
      background-color: #1A120B;
      display: flex;
      justify-content: center;
      gap: 5px;
-
 }
 .about .aboutDiv{
      height: 100%;

@@ -1,29 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap');
 :root{
-     --text-clr:#fff;
-     --bcg-clr:#1A120B;
-     --bcg-ele-clr: #3C2A21;
-     --element1-clr: #D5CEA3;
-     --element2-cle: #E5E5CB;
+     --txt-clr:#fcfcfc;
+     /* --txt-clr1:#222222; */
+     /* --ele-hvr-clr:#D5CEA3; */
+     --ele-clr1:#2b2a2a;
+     --ele-hvr-clr:#FFB400;
+     --bcg-clr1:#161616;
+     --bcg-clr2:#101010;
+     --bcg-clr3:#0A0A0A;
 }
 *{
      margin: 0;
      padding: 0;
      box-sizing: border-box;
      font-family: 'Josefin Sans', sans-serif;
-     /* font-family: 'Open Sans', sans-serif; */
+     scroll-behavior: smooth;
 }
 .home{
-     height: 100vh;
-     width: 100%;
-     display: flex;
-     justify-content: flex-start;
-     flex-direction: column;
-     padding-bottom: 300px;
-     /* background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(background.jpg); */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-bottom: 300px;
     background-image: url(pictures/bcg\ png.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
  nav{
      display: flex;
@@ -32,13 +35,11 @@
      padding: 18px 45px 0px 45px;
  }
  .logo{
-     color: white;
-     font-size: 26px;
-     font-family: 'Open Sans', sans-serif;
-
+     color: var(--txt-clr);
+     font-size: 28px;
  }
  span{
-     color: #D5CEA3;
+     color: var(--ele-hvr-clr);
  }
  nav ul li{
      list-style-type: none;
@@ -46,49 +47,38 @@
      padding: 0px 10px;
  }
  nav ul li a{
-     color: white;
+     color: var(--txt-clr);
      text-decoration: none;
-     font-weight: bold;
+     font-weight: 600;
      font-size: 1.1rem;
      letter-spacing: 1px;
      &:hover{
-          color: #D5CEA3;
+          color: var(--ele-hvr-clr);
+          transition: .4s ease-in-out;
      }
  }
- 
  .gitBtn{
      padding: 5px 15px;
      background: transparent;
      border-radius: 30px;
-     border: 1.5px solid #D5CEA3;
-     
+     border: 2px solid var(--ele-hvr-clr);
      &:hover{
-          cursor: pointer;
-          background-color: #D5CEA3;
-          /* transform: scale(1.1); */
-          color: #1A120B;
-
-          /* transition: .4s; */
-
+        cursor: pointer;
+        background-color: var(--ele-hvr-clr);
+        transition: .4s ease-in-out;
      } 
  }
  .gitBtn a{
      text-decoration: none;
-     color: #fff;
+     color: var(--txt-clr);
      font-size: 1.1rem;
-     font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
+     font-weight: 600;
      letter-spacing: 0.5px;
-     &:hover{
-        color: #1A120B;
-        transition: .4s;
-
-     }
  }
  .gitBtn i{
      padding-right: 3px;
      font-size: 1.2rem;
-     
+     color: var(--txt-clr);
  }
  .heroSection{
      /* background-color: #3C2A21; */
@@ -110,39 +100,74 @@
      gap: 20px;
  }
  .heroSection p{
-     color: #fff;
+     color: var(--txt-clr);
      font-size: 80px;
      opacity: 80%;
-     /* font-weight: 400; */
  }
  .heroSection h1{
      font-size: 65px;
-     color: #fff;
-     /* font-weight: 600; */
-
+     color: var(--txt-clr);
  }
  .heroSectionBtn{
      margin-top: 20px;
      gap: 20px;
      display: flex;
-
  }
 .heroSectionBtn button{
-    font-family: 'Open Sans', sans-serif;
-     padding: 7px 18px;
      background: transparent;
-     font-weight: bold;
-     letter-spacing: 0.5px;
      border-radius: 30px;
-     border: 1.5px solid #D5CEA3;
-     font-size: 1.1rem;
-     color: #fff;
+     border: 1.5px solid var(--ele-hvr-clr);
+     padding: 12px 19px 8px 19px;
      &:hover{
           cursor: pointer;
           background-color: #D5CEA3;
           color: #1A120B;
           transition: .4s;
-          font-weight: bold;
+          font-weight: 600;
 
      } 
+}
+.heroSectionBtn button a{
+    font-weight: 600;
+    color: var(--txt-clr);
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+/* .heroSectionBtn button a, .heroSectionBtn button :hover{
+    cursor: pointer;
+    background-color: #D5CEA3;
+    color: #1A120B;
+    transition: .4s ease-in-out;
+    font-weight: 600;
+} */
+.navBtnContainer{
+    position: absolute;
+    right: 35px;
+    top: 200px;
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+}
+.navBtnContainer div{
+    border-radius: 50%;
+    background-color: var(--ele-clr1);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: var(--ele-hvr-clr);
+        cursor: pointer;
+        transition: .3s all ease-in-out;
+    }
+}
+.navBtnContainer div a{
+    text-decoration: none;
+}
+.navBtnContainer div i{
+    font-size:1.3rem;
+    font-weight: 500;
+    color: var(--txt-clr);
 }
