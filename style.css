@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap');
 :root{
      --txt-clr:#fcfcfc;
-     /* --txt-clr1:#222222; */
+     --txt-clr1:#222222;
      /* --ele-hvr-clr:#D5CEA3; */
      --ele-clr1:#2b2a2a;
      --ele-hvr-clr:#FFB400;
@@ -71,7 +71,7 @@
  .gitBtn a{
      text-decoration: none;
      color: var(--txt-clr);
-     font-size: 1.1rem;
+     font-size: 1rem;
      font-weight: 600;
      letter-spacing: 0.5px;
  }
@@ -116,11 +116,11 @@
 .heroSectionBtn button{
      background: transparent;
      border-radius: 30px;
-     border: 1.5px solid var(--ele-hvr-clr);
-     padding: 12px 19px 8px 19px;
+     border: 2px solid var(--ele-hvr-clr);
+     padding: 11px 20px 7px 20px;
      &:hover{
           cursor: pointer;
-          background-color: #D5CEA3;
+          background-color: var(--ele-hvr-clr);
           color: #1A120B;
           transition: .4s;
           font-weight: 600;
@@ -151,7 +151,7 @@
 }
 .navBtnContainer div{
     border-radius: 50%;
-    background-color: var(--ele-clr1);
+    background-color: var(--bcg-clr1);
     height: 50px;
     width: 50px;
     display: flex;
