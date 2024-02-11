@@ -138,12 +138,16 @@
 
      }
 }
+.socialDiv .iteamDiv .yt a{
+     font-size: 12px;
+
+}
 .iteamDiv .links a{
      text-decoration: none;
      color: var(--txt-clr);
      font-weight: 600;
      
-     font-size:15px ;
+     font-size:14px ;
      /* margin-bottom:2px ; */
      letter-spacing: .5px;
      /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
@@ -182,20 +186,25 @@
 .addDiv{
      background-color: var(--bcg-clr2);
      border-radius: 30px;
-     height: 100px;
+     height: 140px;
      width: 400px;
-     padding: 25px;
+     padding: 30px;
      text-align: center;
+     justify-content: space-evenly;
      display: flex;
      flex-direction: column;
      gap: 0px;
      
 }
 .addDiv .homeIcon{
-     /* display: flex;
+     display: flex;
+     
      justify-content: center;
-     align-items: center; */
+     align-items: center;
 }
-.addDiv :last-child h5{
-     font-size: 15px;
+.addDiv .homeIcon h5{
+     font-size: 18px;
+     line-height: 22px;
+     letter-spacing: .5px;
+
 }
