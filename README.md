@@ -1,6 +1,6 @@
-# Responsive Pizza Website
+# Responsive Personal Portfolio Website
 ## [Watch it on youtube]("Link")
-### Responsive Pizza Website
+### Responsive Personal Porfolio Website
 
 - Responsive Pizza Website Design Using HTML CSS And JavaScript
 - Contains animations when scrolling.
