@@ -15,6 +15,9 @@ let newName = [];
 newName.fill('a',0,nameIn.length);
 
 
+
+
+
 // using a pomise to create a sleep function
 let sleep = (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
